@@ -1,0 +1,31 @@
+:root {
+  --Family-poppins: "Poppins";
+  --Family-merriweather: "Merriweather";
+}
+
+.Button {
+  width: 170px;
+  height: 45px;
+  margin: 10px 20px;
+  border-radius: 4px;
+  border: none;
+  box-shadow: rgba(229, 229, 245, 0.25) 0px 2px 5px -1px,
+    rgba(255, 251, 251, 0.3) 0px 1px 3px -1px;
+  background-color: #fdf498;
+  transition: 0.4s ease-in-out;
+}
+.Button__text {
+  text-decoration: none;
+  font-family: var(--Family-poppins);
+  font-weight: 600;
+  color: black;
+  transition: 0.4s ease-in-out;
+  font-size: 15px;
+}
+.Button__text:hover{
+  color: rgb(53, 34, 34);
+}
+.Button:hover{
+  background-color: #ffef3d;
+  cursor: pointer;
+}

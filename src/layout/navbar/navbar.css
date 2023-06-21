@@ -1,0 +1,44 @@
+:root {
+  --Font-color: #fff;
+  --Family-poppins: "Poppins";
+  --Family-merriweather: "Merriweather";
+}
+
+.Navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  backdrop-filter: blur(15px);
+  background-color: #00000022;
+  box-shadow: 0 2px 15px 2px #ffffff19;
+  padding: 10px 35px;
+  width: 100%;
+  height: 85px;
+}
+
+.Navbar__logo {
+  text-transform: capitalize;
+  color: var(--Font-color);
+  font-size: 26px;
+}
+
+.Navbar__nav {
+  display: flex;
+  align-items: center;
+}
+.Navbar__link {
+  margin: 0 10px;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: var(--Font-color);
+  font-family: var(--Family-poppins);
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 0.2px;
+}
+.Navbar__profilephoto{
+  width: 50px;
+  border-radius: 50px;
+  border: none;
+  margin-left: 20px;
+}
