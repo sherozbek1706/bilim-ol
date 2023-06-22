@@ -1,0 +1,16 @@
+.Tabname {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 20px 30px;
+}
+.Tabname__logo{
+  width: 40px;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+.Tabname__text{
+  font-weight: 800;
+  color: #141438;
+}

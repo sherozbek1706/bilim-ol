@@ -1,10 +1,11 @@
+import { Tabname } from "../../components";
 import { Navbar } from "../../layout";
 import "./leaderboard.css";
 export const Leaderboard = () => {
   return (
-    <div>
+    <div className="Leaderboard">
       <Navbar />
-      
+      <Tabname text={"Leaderboard Table"} />
     </div>
   );
 };
