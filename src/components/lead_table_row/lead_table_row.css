@@ -1,0 +1,74 @@
+.LeadTableRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px 20px;
+  height: 80px;
+  margin: 10px 0;
+  border-radius: 8px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.LeadTableRow:hover {
+  background-color: #03396c;
+  transform: scale(1.02);
+}
+.LeadTableRow_idx {
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 26px;
+  margin-right: 10px;
+  transition: 0.3s ease-in-out;
+}
+.LeadTableRow__profile {
+  width: 60px;
+  border-radius: 7px;
+  margin-right: 10px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  transition: 0.3s ease-in-out;
+}
+.LeadTableRow__fullname {
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 24px;
+  width: 38%;
+  transition: 0.3s ease-in-out;
+}
+.LeadTableRow__point {
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 26px;
+  width: 22%;
+  transition: 0.3s ease-in-out;
+}
+.LeadTableRow__profileside {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 80%;
+}
+.LeadTableRow__pointside {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 20%;
+}
+.circleLogo {
+  width: 40px;
+  margin-left: 20px;
+}
+
+.LeadTableRow:hover .LeadTableRow__fullname,
+.LeadTableRow:hover .LeadTableRow__point,
+.LeadTableRow:hover .LeadTableRow_idx {
+  color: yellow;
+}
+
+.LeadTableRow:hover .LeadTableRow__profile {
+  box-shadow: rgba(170, 207, 20, 0.3) 0px 1px 2px 0px,
+    rgba(187, 180, 52, 0.15) 0px 1px 3px 1px;
+}
