@@ -24,10 +24,4 @@ export const LeadTableRow = ({ data }) => {
       ))}
     </>
   );
-
-  data.map((user) => (
-    <div className="LeadTableRow">
-      <h1>{user}</h1>
-    </div>
-  ));
 };
