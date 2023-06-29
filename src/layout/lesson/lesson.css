@@ -1,5 +1,15 @@
-.Lesson{
+.Lesson {
   width: calc(100% - 350px);
   height: 600px;
   border-top: 1px solid #00000028;
+  padding: 10px 15px;
+}
+.Lesson_name {
+  font-family: "Poppins";
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: -2px;
+}
+.Lesson_image{
+  width: 450px;
 }

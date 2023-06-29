@@ -1,30 +1,32 @@
-import "./lesson.css";
-import { Lessons } from "../../database";
 import { useEffect, useState } from "react";
-// import DocViewer, { DocViewerRenderers } from "react-doc-viewer";
+import { Lessons } from "../../database";
+import "./lesson.css";
+
 export const Lesson = ({ id }) => {
   const [lesson, setLesson] = useState([]);
-  const [data, setData] = useState("");
+  const [lessonText, setLessonText] = useState([]);
+
   useEffect(() => {
     const existLesson = Lessons.find((l) => l.id == id);
-    console.log(existLesson);
     setLesson(existLesson);
-
-    
+    setLessonText(existLesson.text);
   }, [id]);
-
-  // const docs = [
-  //   {
-  //     uri: "ww.docx",
-  //     fileType: "docx",
-  //     // fileName: "lesson1.docx",
-  //   },
-  // ];
-
   return (
     <div className="Lesson">
-      <h1>Lesson {lesson.name}</h1>
-      <p>{data}</p>
+      <h1 className="Lesson_name">{lesson.name}</h1>
+      {lessonText.map((item) => {
+        if (item.tag == "p") {
+          return <p>{item.text}</p>;
+        } else if (item.tag == "a") {
+          return (
+            <>
+              <a href={item.href}>{item.text}</a>
+              <br />
+            </>
+          );
+        }
+      })}
+      <img className="Lesson_image" src={lesson.image} alt="" />
     </div>
   );
 };

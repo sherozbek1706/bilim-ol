@@ -11,7 +11,7 @@ export const Sitebar = ({ handleTakeID }) => {
           onClick={() => handleTakeID(lesson.id)}
         >
           <h3 className="Sitebar__rowname">
-            {idx + 1}. {lesson.name}
+            {idx}. {lesson.name}
           </h3>
         </div>
       ))}
