@@ -42,3 +42,7 @@
   border: none;
   margin-left: 20px;
 }
+.Navbar__logolink{
+  text-decoration: none;
+  color: #fff;
+}
