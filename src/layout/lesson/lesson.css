@@ -13,3 +13,7 @@
 .Lesson_image{
   width: 450px;
 }
+.Lesson__number{
+  font-family: "Poppins";
+  letter-spacing: -1px;
+}

@@ -11,8 +11,10 @@ export const Lesson = ({ id }) => {
     setLesson(existLesson);
     setLessonText(existLesson.text);
   }, [id]);
+
   return (
     <div className="Lesson">
+      <h3 className="Lesson__number">{lesson.id} - DARS</h3>
       <h1 className="Lesson_name">{lesson.name}</h1>
       {lessonText.map((item) => {
         if (item.tag == "p") {
