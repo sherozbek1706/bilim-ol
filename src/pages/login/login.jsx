@@ -20,7 +20,7 @@ export const Login = () => {
       return alert("Login or password incorrect");
     }
 
-    localStorage.setItem("isLoggin", user);
+    localStorage.setItem("isLoggin", JSON.stringify(user));
 
     navigate("/");
     console.log(user);
