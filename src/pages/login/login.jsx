@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import "./login.css";
 import { useNavigate } from "react-router-dom";
-import { Users } from "../../database/users";
+import { Users } from "../../database";
 export const Login = () => {
   const usernameRef = useRef();
   const passwordRef = useRef();

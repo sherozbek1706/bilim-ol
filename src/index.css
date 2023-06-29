@@ -6,5 +6,10 @@
   list-style: none;
   /* font-family: "Poppins", "Merriweather", serif; */
   font-family: "Merriweather", serif;
-
+}
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #0000002a;
 }

@@ -1,0 +1,5 @@
+.Lesson{
+  width: calc(100% - 350px);
+  height: 600px;
+  border-top: 1px solid #00000028;
+}

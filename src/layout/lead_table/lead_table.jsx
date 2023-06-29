@@ -1,5 +1,5 @@
 import "./lead_table.css";
-import { Users } from "../../database/users";
+import { Users } from "../../database";
 import { LeadTableRow } from "../../components";
 import { useEffect, useState } from "react";
 export const LeadTable = () => {
@@ -9,7 +9,7 @@ export const LeadTable = () => {
   
   useEffect(() => {
     const base = data.sort((a, b) => {
-      return a.point - b.point;
+      return b.point - a.point;
     });
     console.log(base);
 

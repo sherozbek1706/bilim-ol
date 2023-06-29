@@ -1,0 +1,29 @@
+.Sitebar {
+  width: 350px;
+  height: 600px;
+  border: 1px solid #00000028;
+  overflow: auto;
+}
+.Sitebar__row {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 10px;
+  width: 100%;
+  min-height: 60px;
+  padding: 15px;
+  border-bottom: 1px solid #00000028;
+  border-right: 1px solid #00000028;
+  transition: 0.3s ease-in-out;
+}
+.Sitebar__rowname {
+  font-family: "Poppins";
+  font-weight: 600;
+  transition: 0.3s ease-in-out;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+.Sitebar__row:hover {
+  cursor: pointer;
+  background-color: #b3cde0;
+}
