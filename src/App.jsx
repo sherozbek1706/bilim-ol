@@ -4,7 +4,6 @@ import { Route, Routes } from "react-router-dom";
 
 function App() {
   const isLoggin = localStorage.getItem("isLoggin");
-  console.log(isLoggin);
   return (
     <>
       <Routes>
