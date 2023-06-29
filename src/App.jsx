@@ -1,5 +1,5 @@
 import "./App.css";
-import { Main, Leaderboard, Login, Lessons } from "./pages";
+import { Main, Leaderboard, Login, Lessons, NotFound } from "./pages";
 import { Route, Routes } from "react-router-dom";
 
 function App() {
@@ -8,9 +8,10 @@ function App() {
     <>
       <Routes>
         <Route exact path="/" Component={Main} />
-        <Route exact path="/leaderboard" Component={Leaderboard} />
-        <Route exact path={"/login"} Component={!isLoggin ? Login : Main} />
-        <Route exact path={"/lessons"} Component={Lessons} />
+        <Route path="/leaderboard" Component={Leaderboard} />
+        <Route path="/login" Component={!isLoggin ? Login : Main} />
+        <Route path="/lessons" Component={Lessons} />
+        <Route path="*" Component={NotFound} />
       </Routes>
     </>
   );

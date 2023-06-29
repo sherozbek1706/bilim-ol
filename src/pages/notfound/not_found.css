@@ -1,0 +1,16 @@
+.NotFound {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #fff;
+}
+.NotFound h2{
+  font-size: 48px;
+  letter-spacing: -3px;
+  color: #aa0000;
+  font-family: "Poppins";
+  text-transform: uppercase;
+}
