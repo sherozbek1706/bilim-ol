@@ -1,6 +1,6 @@
 export const Lessons = [
   {
-    id: "0.tg",
+    id: "0",
     name: "Yopiq guruhga link",
     text: [
       {
