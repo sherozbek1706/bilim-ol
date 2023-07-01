@@ -7,10 +7,28 @@
   flex-direction: column;
   background-color: #fff;
 }
-.NotFound h2{
+.NotFound h2 {
   font-size: 48px;
   letter-spacing: -3px;
   color: #aa0000;
   font-family: "Poppins";
   text-transform: uppercase;
+}
+@media only screen and (max-width: 700px) {
+  .NotFound h2 {
+    font-size: 36px;
+    letter-spacing: -2px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .NotFound h2 {
+    font-size: 24px;
+    letter-spacing: -1px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .NotFound h2 {
+    font-size: 16px;
+    letter-spacing: -0.5px;
+  }
 }
