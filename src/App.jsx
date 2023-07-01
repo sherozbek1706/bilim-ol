@@ -10,7 +10,7 @@ function App() {
         <Route exact path="/" Component={Main} />
         <Route path="/leaderboard" Component={Leaderboard} />
         <Route path="/login" Component={!isLoggin ? Login : Main} />
-        <Route path="/lessons" Component={Lessons} />
+        <Route path="/lessons" Component={!isLoggin ? Login : Lessons} />
         <Route path="*" Component={NotFound} />
       </Routes>
     </>
