@@ -17,7 +17,7 @@ export const Main = () => {
         </p>
         <div className="Main__buttons">
           <Button name={"Leaderboard"} link={"/leaderboard"} />
-          <Button name={"Lessons"} link={"/lessons"}/>
+          <Button name={"Lessons"} link={"/lessons"} />
         </div>
       </div>
     </div>

@@ -16,12 +16,11 @@
   justify-content: center;
   flex-direction: column;
   width: 100%;
-  height: 600px;
+  margin-top: 150px;
 }
 .Main__text {
   font-size: 84px;
   color: white;
-
 }
 .Main__paragraph {
   width: 700px;
@@ -30,6 +29,39 @@
   color: #fff;
   font-family: var(--Family-poppins);
 }
-.Main__buttons{
+.Main__buttons {
   margin: 20px 0;
+}
+
+@media only screen and (max-width: 850px) {
+  .Main__text {
+    font-size: 64px;
+  }
+  .Main__paragraph {
+    font-size: 14px;
+    /* line-height: 18px; */
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .Main__text {
+    font-size: 52px;
+  }
+  .Main__paragraph {
+    font-size: 13px;
+    /* line-height: 18px; */
+    width: 85%;
+  }
+}
+
+@media only screen and (max-width: 570px) {
+  .Main__text {
+    font-size: 52px;
+  }
+  .Main__paragraph {
+    font-size: 13px;
+    /* line-height: 18px; */
+    width: 95%;
+  }
 }
