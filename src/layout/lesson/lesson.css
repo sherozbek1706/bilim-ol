@@ -3,6 +3,8 @@
   height: 600px;
   border-top: 1px solid #00000028;
   padding: 10px 15px;
+  background: #f8f8fa;
+  overflow: auto;
 }
 .Lesson_name {
   font-family: "Poppins";

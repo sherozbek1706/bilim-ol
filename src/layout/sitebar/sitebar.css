@@ -3,6 +3,7 @@
   height: 600px;
   border: 1px solid #00000028;
   overflow: auto;
+  background: #dfe3ee;
 }
 .Sitebar__row {
   display: flex;
