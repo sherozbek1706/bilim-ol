@@ -47,8 +47,9 @@
   color: #fff;
 }
 .Navbar__responsive {
+  z-index: 1210;
   top: -110%;
-  transition: .2s ease-in-out;
+  transition: 0.2s ease-in-out;
   display: none;
 }
 
@@ -57,7 +58,7 @@
   font-size: 22px;
   display: none;
 }
-.navbar_close{
+.navbar_close {
   display: none;
 }
 
@@ -65,7 +66,7 @@
   .Navbar .Navbar__nav {
     display: none;
   }
-  .navbar_close{
+  .navbar_close {
     position: absolute;
     display: block;
     font-size: 28px;
@@ -120,33 +121,32 @@
   }
 }
 
-
 @media only screen and (max-width: 700px) {
-  .Navbar__logolink{
+  .Navbar__logolink {
     font-size: 36px;
   }
-  .Navbar__responsive .Navbar__link{
+  .Navbar__responsive .Navbar__link {
     font-size: 18px;
   }
-  .navbar_close{
+  .navbar_close {
     font-size: 20px;
   }
-  .Navbar__responsive{
+  .Navbar__responsive {
     padding: 10px 22px;
   }
 }
 
 @media only screen and (max-width: 450px) {
-  .Navbar__logolink{
+  .Navbar__logolink {
     font-size: 28px;
   }
-  .Navbar__responsive .Navbar__link{
+  .Navbar__responsive .Navbar__link {
     font-size: 15px;
   }
-  .navbar_close{
+  .navbar_close {
     font-size: 18px;
   }
-  .Navbar__responsive{
+  .Navbar__responsive {
     padding: 10px 22px;
   }
 }
