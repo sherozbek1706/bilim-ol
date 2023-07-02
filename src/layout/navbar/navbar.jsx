@@ -8,7 +8,11 @@ export const Navbar = () => {
 
   const handleActiveTab = () => {
     setIsActive(!isActive);
-    console.log(isActive);
+  };
+
+  const handleLogout = () => {
+    localStorage.clear();
+    window.location.assign("/");
   };
   return (
     <>
@@ -28,9 +32,13 @@ export const Navbar = () => {
           <Link to={isLoggin ? "/lessons" : "/login"} className="Navbar__link">
             {isLoggin ? "Lessons" : "Login"}
           </Link>
-          {/* <Link to="/profile" className="Navbar__link">
-          Profile
-        </Link> */}
+          <Link
+            to={isLoggin ? "/" : "/login"}
+            className="Navbar__link"
+            onClick={handleLogout}
+          >
+            {isLoggin ? "Logout" : null}
+          </Link>
           <img
             className="Navbar__profilephoto"
             src={isLoggin ? isLoggin.image : ProfilePhoto}
@@ -67,9 +75,13 @@ export const Navbar = () => {
           >
             {isLoggin ? "Lessons" : "Login"}
           </Link>
-          {/* <Link to="/profile" className="Navbar__link">
-          Profile
-        </Link> */}
+          <Link
+            to={isLoggin ? "/" : "/login"}
+            className="Navbar__link"
+            onClick={handleLogout}
+          >
+            {isLoggin ? "Logout" : null}
+          </Link>
           <img
             className="Navbar__profilephoto"
             src={isLoggin ? isLoggin.image : ProfilePhoto}
