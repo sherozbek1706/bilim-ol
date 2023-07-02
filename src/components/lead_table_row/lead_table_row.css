@@ -12,6 +12,26 @@
   cursor: pointer;
   transition: 0.3s ease-in-out;
 }
+.LeadTableRow:first-child {
+  background-color: #03396c;
+  transform: scale(1.01);
+}
+.LeadTableRow:first-child {
+  background-color: #03396c;
+  transform: scale(1.01);
+}
+
+.LeadTableRow:first-child .LeadTableRow__fullname,
+.LeadTableRow:first-child .LeadTableRow__point,
+.LeadTableRow:first-child .LeadTableRow_idx {
+  color: yellow;
+}
+
+.LeadTableRow:first-child .LeadTableRow__profile {
+  box-shadow: rgba(170, 207, 20, 0.3) 0px 1px 2px 0px,
+    rgba(187, 180, 52, 0.15) 0px 1px 3px 1px;
+}
+
 .LeadTableRow:hover {
   background-color: #03396c;
   transform: scale(1.02);
@@ -35,7 +55,7 @@
   font-family: "Poppins";
   font-weight: 700;
   font-size: 24px;
-  width: 38%;
+  width: 600px;
   transition: 0.3s ease-in-out;
 }
 .LeadTableRow__point {
@@ -55,7 +75,7 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  width: 20%;
+  width: 160px;
 }
 .circleLogo {
   width: 40px;
@@ -71,4 +91,86 @@
 .LeadTableRow:hover .LeadTableRow__profile {
   box-shadow: rgba(170, 207, 20, 0.3) 0px 1px 2px 0px,
     rgba(187, 180, 52, 0.15) 0px 1px 3px 1px;
+}
+
+@media only screen and (max-width: 980px) {
+  .LeadTableRow__fullname {
+    font-weight: 600;
+    font-size: 20px;
+    width: 400px;
+  }
+  .LeadTableRow__point {
+    font-weight: 600;
+    font-size: 20px;
+  }
+  .circleLogo {
+    width: 32px;
+  }
+  .LeadTableRow__pointside {
+    width: 120px;
+  }
+  .LeadTableRow_idx {
+    font-weight: 600;
+    font-size: 20px;
+  }
+  .LeadTableRow__profile {
+    width: 45px;
+  }
+  .LeadTableRow {
+    height: 70px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .LeadTableRow__fullname {
+    font-weight: 500;
+    font-size: 18px;
+    width: 300px;
+    letter-spacing: -1px;
+  }
+  .LeadTableRow__point {
+    font-weight: 500;
+    font-size: 18px;
+  }
+  .LeadTableRow_idx {
+    font-weight: 600;
+    font-size: 18px;
+  }
+  .LeadTableRow__profile {
+    width: 38px;
+  }
+  .LeadTableRow {
+    height: 60px;
+  }
+  .circleLogo {
+    width: 24px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .LeadTableRow__fullname {
+    font-weight: 500;
+    font-size: 15px;
+    width: 200px;
+    letter-spacing: -0.7px;
+  }
+  .LeadTableRow__point {
+    font-weight: 500;
+    font-size: 15px;
+  }
+  .LeadTableRow_idx {
+    font-weight: 600;
+    font-size: 15px;
+  }
+  .LeadTableRow__profile {
+    width: 28px;
+  }
+  .LeadTableRow {
+    height: 48px;
+  }
+  .circleLogo {
+    width: 24px;
+  }
+  .LeadTableRow__pointside{
+    width: 80px;
+  }
 }
