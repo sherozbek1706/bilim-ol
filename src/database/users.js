@@ -4,60 +4,12 @@ const data = [
     first_name: "Sherozbek",
     last_name: "Baxtiyorov",
     image: "./image/users/user1.jpg",
-    point: 600,
+    point: 0,
     datail: {
       username: "sherozbek.17",
       password: "12341234",
     },
     birthday: "01-01-1999",
-  },
-  {
-    id: 2,
-    first_name: "Temurbek",
-    last_name: "Adhamov",
-    image: "./image/users/user2.jpg",
-    point: 401,
-    datail: {
-      username: "temurbek.00",
-      password: "123123123",
-    },
-    birthday: "05-05-1882",
-  },
-  {
-    id: 3,
-    first_name: "Avazbek",
-    last_name: "Shukurullayev",
-    image: "./image/users/user1.jpg",
-    point: 150,
-    datail: {
-      username: "avaz.00",
-      password: "123123123",
-    },
-    birthday: "05-05-1882",
-  },
-  {
-    id: 4,
-    first_name: "Shukurullo",
-    last_name: "Mansurov",
-    image: "./image/users/user2.jpg",
-    point: 520,
-    datail: {
-      username: "shukurullo.00",
-      password: "123123123",
-    },
-    birthday: "05-05-2001",
-  },
-  {
-    id: 5,
-    first_name: "Malika",
-    last_name: "Jamshidova",
-    image: "./image/users/user1.jpg",
-    point: 525,
-    datail: {
-      username: "malika.00",
-      password: "123123123",
-    },
-    birthday: "05-05-2004",
   },
 ];
 
