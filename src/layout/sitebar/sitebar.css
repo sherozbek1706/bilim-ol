@@ -28,3 +28,20 @@
   cursor: pointer;
   background-color: #b3cde0;
 }
+
+@media only screen and (max-width: 850px) {
+  .Sitebar {
+    width: 100%;
+  }
+  .Sitebar__row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .Sitebar__rowname {
+    font-size: 12px;
+  }
+}

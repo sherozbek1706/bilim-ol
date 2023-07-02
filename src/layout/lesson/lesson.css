@@ -12,10 +12,31 @@
   text-transform: uppercase;
   letter-spacing: -2px;
 }
-.Lesson_image{
+.Lesson_image {
   width: 450px;
 }
-.Lesson__number{
+.Lesson__number {
   font-family: "Poppins";
   letter-spacing: -1px;
+}
+
+@media only screen and (max-width: 850px){
+  .Lesson{
+    height: auto;
+    padding-bottom: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .Lesson_image{
+    margin: 10px 0;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .Lesson_image{
+    width: 95%;
+  }
 }

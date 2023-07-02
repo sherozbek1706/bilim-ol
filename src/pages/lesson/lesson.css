@@ -3,9 +3,17 @@
   min-height: 101vh;
   background-color: #e7eff6;
 }
-.Lessons__table{
+.Lessons__table {
   width: 100%;
   height: 600px;
   display: flex;
   justify-content: space-between;
+}
+
+@media only screen and (max-width: 850px){
+  .Lessons__table {
+    width: 100%;
+    height: auto;
+    flex-direction: column-reverse;
+  }
 }
