@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import "./login.css";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Users } from "../../database";
 export const Login = () => {
   const usernameRef = useRef();
@@ -22,7 +22,8 @@ export const Login = () => {
 
     localStorage.setItem("isLoggin", JSON.stringify(user));
 
-    navigate("/");
+    window.location.assign("/");
+    // navigate("/");
     console.log(user);
   };
   return (
@@ -43,6 +44,10 @@ export const Login = () => {
           />
           <input type="submit" className="button" value="Login" />
         </form>
+        <p className="return_home">If you want to return home 🤜 </p>
+        <Link to="/" className="return_home">
+          Click Here
+        </Link>
       </div>
     </div>
   );

@@ -71,3 +71,11 @@ body {
 .form input.button:hover {
   background: #006653;
 }
+.return_home {
+  display: inline;
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "Poppins";
+}
