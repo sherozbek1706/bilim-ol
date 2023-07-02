@@ -5,12 +5,32 @@
   width: 100%;
   padding: 20px 30px;
 }
-.Tabname__logo{
+.Tabname__logo {
   width: 40px;
   margin-right: 20px;
   border-radius: 50%;
 }
-.Tabname__text{
+.Tabname__text {
   font-weight: 800;
   color: #141438;
+}
+
+@media only screen and (max-width: 700px) {
+  .Tabname__logo {
+    width: 32px;
+  }
+  .Tabname__text {
+    font-weight: 700;
+    font-size: 28px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .Tabname__logo {
+    width: 24px;
+  }
+  .Tabname__text {
+    font-weight: 600;
+    font-size: 22px;
+    letter-spacing: -1.5px;
+  }
 }
