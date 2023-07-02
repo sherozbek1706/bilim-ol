@@ -39,4 +39,7 @@
   .Lesson_image{
     width: 95%;
   }
+  .Lesson_name {
+    font-size: 22px;
+  }
 }
