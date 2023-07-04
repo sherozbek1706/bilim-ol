@@ -29,6 +29,9 @@
   background-color: #b3cde0;
 }
 
+.Sitebar__active {
+  background-color: #b3cde0;
+}
 @media only screen and (max-width: 850px) {
   .Sitebar {
     width: 100%;

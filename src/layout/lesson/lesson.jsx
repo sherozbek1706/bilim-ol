@@ -18,13 +18,13 @@ export const Lesson = ({ id }) => {
       <h1 className="Lesson_name">{lesson.name}</h1>
       {lessonText.map((item) => {
         if (item.tag == "p") {
-          return <p>{item.text}</p>;
+          return <p key={item.id}>{item.text}</p>;
         } else if (item.tag == "a") {
           return (
-            <>
+            <div key={item.id}>
               <a href={item.href}>{item.text}</a>
               <br />
-            </>
+            </div>
           );
         }
       })}
