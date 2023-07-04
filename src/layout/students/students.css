@@ -1,0 +1,79 @@
+.Students {
+  width: 100%;
+  padding: 30px;
+  background-color: #dfe3ee;
+}
+.Students__pagination {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.Students__one {
+  width: 320px;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 15px;
+}
+.Student__img {
+  width: 280px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+.Student__name {
+  font-family: "Poppins";
+  text-transform: uppercase;
+  font-size: 18px;
+  letter-spacing: -1.4px;
+  padding: 5px 0;
+}
+.Student__username {
+  font-family: "Poppins";
+  font-size: 15px;
+  letter-spacing: -0.5px;
+  padding: 3px 7px;
+  display: inline;
+  font-weight: 500;
+}
+.Student__username span {
+  border-radius: 7px;
+  font-weight: 500;
+  font-family: "Poppins";
+  padding: 3px 7px;
+  background-color: #76b4bd;
+}
+
+.Student__point {
+  font-family: "Poppins";
+  font-size: 15px;
+  letter-spacing: -0.5px;
+  padding: 3px 7px;
+  display: inline-block;
+  font-weight: 500;
+}
+.Student__point span {
+  border-radius: 7px;
+  font-weight: 500;
+  font-family: "Poppins";
+  padding: 3px 7px;
+  background-color: #ffc425;
+}
+
+.Student__birthday {
+  font-family: "Poppins";
+  font-size: 15px;
+  letter-spacing: -0.5px;
+  padding: 3px 7px;
+  display: inline-block;
+  font-weight: 500;
+}
+.Student__birthday span {
+  border-radius: 7px;
+  font-weight: 500;
+  font-family: "Poppins";
+  padding: 3px 7px;
+  color: #fff;
+  background-color: #008744;
+}

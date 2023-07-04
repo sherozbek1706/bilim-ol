@@ -4,12 +4,36 @@ const data = [
     first_name: "Sherozbek",
     last_name: "Baxtiyorov",
     image: "./image/users/user1.jpg",
-    point: 0,
+    point: 75,
     datail: {
       username: "sherozbek.17",
       password: "12341234",
     },
-    birthday: "01-01-1999",
+    birthday: "200d5-06-17",
+  },
+  {
+    id: 2,
+    first_name: "Javohir",
+    last_name: "O'ktamovich",
+    image: "./image/users/user3.jpg",
+    point: 45,
+    datail: {
+      username: "uktamovich",
+      password: "12341234",
+    },
+    birthday: "2006-02-27",
+  },
+  {
+    id: 3,
+    first_name: "Tmurbek",
+    last_name: "Adhamov",
+    image: "./image/users/user2.jpg",
+    point: 65,
+    datail: {
+      username: "temurbek.00",
+      password: "12341234",
+    },
+    birthday: "1994-05-22",
   },
 ];
 
