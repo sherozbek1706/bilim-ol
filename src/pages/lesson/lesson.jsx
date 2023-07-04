@@ -3,7 +3,8 @@ import { Navbar, Sitebar, Lesson } from "../../layout";
 import { Tabname } from "../../components";
 import { useEffect, useState } from "react";
 export const Lessons = () => {
-  const [lessonId, setLessonId] = useState(1);
+  const lclessonId = localStorage.getItem("lesson_id") || 1;
+  const [lessonId, setLessonId] = useState(lclessonId);
   const handleTakeID = (id) => {
     setLessonId(id);
   };
