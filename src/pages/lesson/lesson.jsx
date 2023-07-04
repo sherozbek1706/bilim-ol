@@ -6,7 +6,7 @@ export const Lessons = () => {
   const lclessonId = localStorage.getItem("lesson_id") || 1;
   const [lessonId, setLessonId] = useState(lclessonId);
   const handleTakeID = (id) => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({ top: 0, behavior: "smooth" });
     setLessonId(id);
   };
 
