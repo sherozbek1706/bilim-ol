@@ -45,13 +45,16 @@ export const Navbar = () => {
             alt=""
           />
         </div>
-        <i class="fa-solid fa-bars hamburger" onClick={handleActiveTab}></i>
+        <i className="fa-solid fa-bars hamburger" onClick={handleActiveTab}></i>
       </div>
 
       <div
         className={`Navbar__responsive  ${isActive ? "stick__navbar" : ""} `}
       >
-        <i class="fa-solid fa-xmark navbar_close" onClick={handleActiveTab}></i>
+        <i
+          className="fa-solid fa-xmark navbar_close"
+          onClick={handleActiveTab}
+        ></i>
         <h1 className="Navbar__logo">
           <Link to="/" className="Navbar__logolink" onClick={handleActiveTab}>
             Bilim'ol

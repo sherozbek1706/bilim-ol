@@ -12,6 +12,7 @@
   "dependencies": {
     "@cyntler/react-doc-viewer": "^1.13.0",
     "react": "^18.2.0",
+    "react-countup": "^6.4.2",
     "react-doc-viewer": "^0.1.5",
     "react-doc-viewer-updated": "^1.10.8",
     "react-dom": "^18.2.0",
