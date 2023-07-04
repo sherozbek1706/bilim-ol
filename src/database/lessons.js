@@ -35,6 +35,6 @@ export const Lessons = [
         href: "",
       },
     ],
-    image: "1.jpg",
+    image: "./lessons/1.jpg",
   },
 ];
