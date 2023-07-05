@@ -4,7 +4,7 @@ import { Users } from "../../database";
 export const Students = () => {
   return (
     <div className="Students">
-      <Tabname text={"Our Students"} />
+      <Tabname text={"Bizning o'quvchilar"} />
       <div className="Students__pagination">
         {Users.map((user) => (
           <div className="Students__one" key={user.id}>

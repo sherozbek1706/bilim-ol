@@ -18,7 +18,7 @@ export const Lessons = () => {
   return (
     <div className="Lessons">
       <Navbar />
-      <Tabname text={"Lessons"} />
+      <Tabname text={"Darslar"} />
       <div className="Lessons__table">
         <Sitebar handleTakeID={(id) => handleTakeID(id)} id={lessonId} />
         <Lesson id={lessonId} />

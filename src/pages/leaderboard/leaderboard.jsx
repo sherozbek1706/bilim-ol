@@ -5,7 +5,7 @@ export const Leaderboard = () => {
   return (
     <div className="Leaderboard">
       <Navbar />
-      <Tabname text={"Leaderboard Table"} />
+      <Tabname text={"Eng kuchlilar jadvali"} />
       <LeadTable />
     </div>
   );
