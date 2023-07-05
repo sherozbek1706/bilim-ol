@@ -10,8 +10,8 @@ export const Main = () => {
           <h1 className="Main__text">Bilim'ol</h1>
           <Statistic />
           <div className="Main__buttons">
-            <Button name={"Leaderboard"} link={"/leaderboard"} />
-            <Button name={"Lessons"} link={"/lessons"} />
+            <Button name={"Eng kuchlilar"} link={"/leaderboard"} />
+            <Button name={"Darslar"} link={"/lessons"} />
           </div>
         </div>
       </div>
