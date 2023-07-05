@@ -24,20 +24,20 @@ export const Navbar = () => {
         </h1>
         <div className="Navbar__nav">
           <Link to="/" className="Navbar__link">
-            Home
+            Bosh sahifa
           </Link>
           <Link to="/leaderboard" className="Navbar__link">
-            Leaderboard
+            Eng kuchlilar
           </Link>
           <Link to={isLoggin ? "/lessons" : "/login"} className="Navbar__link">
-            {isLoggin ? "Lessons" : "Login"}
+            {isLoggin ? "Darslar" : "Login"}
           </Link>
           <Link
             to={isLoggin ? "/" : "/login"}
             className="Navbar__link"
             onClick={handleLogout}
           >
-            {isLoggin ? "Logout" : null}
+            {isLoggin ? "O'chirish" : null}
           </Link>
           <img
             className="Navbar__profilephoto"
@@ -62,28 +62,28 @@ export const Navbar = () => {
         </h1>
         <div className="Navbar__nav">
           <Link to="/" className="Navbar__link" onClick={handleActiveTab}>
-            Home
+            bosh sahifa
           </Link>
           <Link
             to="/leaderboard"
             className="Navbar__link"
             onClick={handleActiveTab}
           >
-            Leaderboard
+            eng kuchlilar
           </Link>
           <Link
             to={isLoggin ? "/lessons" : "/login"}
             className="Navbar__link"
             onClick={handleActiveTab}
           >
-            {isLoggin ? "Lessons" : "Login"}
+            {isLoggin ? "darslar" : "Login"}
           </Link>
           <Link
             to={isLoggin ? "/" : "/login"}
             className="Navbar__link"
             onClick={handleLogout}
           >
-            {isLoggin ? "Logout" : null}
+            {isLoggin ? "O'chirish" : null}
           </Link>
           <img
             className="Navbar__profilephoto"
