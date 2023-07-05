@@ -23,6 +23,7 @@ export const Lessons = [
       },
     ],
     image: "",
+    opening_day: "2023-07-05 10:56:00",
   },
   {
     id: 1,
@@ -36,5 +37,6 @@ export const Lessons = [
       },
     ],
     image: "./lessons/1.jpg",
+    opening_day: "2023-07-05 13:00",
   },
 ];

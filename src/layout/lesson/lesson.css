@@ -20,8 +20,73 @@
   letter-spacing: -1px;
 }
 
-@media only screen and (max-width: 850px){
-  .Lesson{
+.Lesson__lock {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.lesson__lockicon {
+  font-size: 120px;
+  color: #fe4a49;
+  margin: 20px 0;
+}
+.Lesson__locksabab {
+  font-weight: 700;
+  color: #fe4a49;
+  font-size: 26px;
+  margin: 10px 0;
+  font-family: "Poppins";
+  text-transform: uppercase;
+  letter-spacing: -1.5px;
+  width: 75%;
+  text-align: center;
+}
+.Lesson__openingTime {
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 32px;
+  padding: 7px 10px;
+  background: #005b96;
+  color: white;
+  letter-spacing: 1px;
+  width: 250px;
+  text-align: center;
+  border-radius: 7px;
+}
+.open_time_elon{
+  font-family: "Poppins";
+  text-transform: uppercase;
+  font-weight: 500;
+  text-align: center;
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 1030px) {
+  .lesson__lockicon {
+    font-size: 100px;
+    margin: 15px 0;
+  }
+  .Lesson__locksabab {
+    font-size: 22px;
+    margin: 7px 0;
+    width: 80%;
+    text-transform: none;
+    font-weight: 700;
+  }
+  .Lesson__openingTime {
+    font-size: 24px;
+    padding: 7px 10px;
+    letter-spacing: 1px;
+    width: 180px;
+    font-weight: 600;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .Lesson {
     height: auto;
     padding-bottom: 100px;
     width: 100%;
@@ -30,16 +95,43 @@
     justify-content: flex-start;
     align-items: center;
   }
-  .Lesson_image{
+  .Lesson_image {
     margin: 10px 0;
+  }
+
+  .lesson__lockicon {
+    font-size: 150px;
+    margin: 20px 0;
+  }
+  .Lesson__locksabab {
+    width: 60%;
   }
 }
 
-@media only screen and (max-width: 600px){
-  .Lesson_image{
+@media only screen and (max-width: 600px) {
+  .Lesson_image {
     width: 95%;
   }
   .Lesson_name {
     font-size: 22px;
+  }
+
+  .lesson__lockicon {
+    font-size: 100px;
+    margin: 20px 0;
+  }
+  .Lesson__locksabab {
+    font-size: 18px;
+    width: 80%;
+  }
+  .Lesson__openingTime {
+    font-size: 20px;
+    letter-spacing: 1px;
+    width: 150px;
+    font-weight: 500;
+  }
+  .open_time_elon{
+    font-size: 13px;
+    letter-spacing: -0.5px;
   }
 }
