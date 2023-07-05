@@ -13,15 +13,15 @@ export const Students = () => {
               {user.last_name} {user.first_name}
             </h3>
             <p className="Student__username">
-              Username <span>{user.datail.username}</span>
+              Login <span>{user.datail.username}</span>
             </p>
             <br />
             <p className="Student__point">
-              Point <span>{user.point}</span>
+              Ball <span>{user.point}</span>
             </p>
             <br />
             <p className="Student__birthday">
-              Birthday <span>{new Date(user.birthday).toDateString()}</span>
+              Tug'ilgan sana <span>{new Date(user.birthday).toDateString()}</span>
             </p>
           </div>
         ))}
