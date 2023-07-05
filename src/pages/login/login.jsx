@@ -17,13 +17,12 @@ export const Login = () => {
     });
 
     if (!user) {
-      return alert("Login or password incorrect");
+      return alert("Login yoki parol xato!");
     }
 
     localStorage.setItem("isLoggin", JSON.stringify(user));
 
     window.location.assign("/");
-    // navigate("/");
     console.log(user);
   };
   return (
@@ -35,18 +34,20 @@ export const Login = () => {
           <input
             type="text"
             ref={usernameRef}
-            placeholder="Enter your username"
+            placeholder="Iltimos, Login kiriting"
+            required
           />
           <input
             type="password"
             ref={passwordRef}
-            placeholder="Enter your password"
+            placeholder="Iltimos, Parol kiriting"
+            required
           />
           <input type="submit" className="button" value="Login" />
         </form>
-        <p className="return_home">If you want to return home 🤜 </p>
+        <p className="return_home">Bosh sahifaga qaytishni xohlasangiz 🤜 </p>
         <Link to="/" className="return_home">
-          Click Here
+          Bosing
         </Link>
       </div>
     </div>
