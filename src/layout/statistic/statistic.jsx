@@ -6,7 +6,11 @@ export const Statistic = () => {
     <div className="Main__statistics">
       <div className="Statistic">
         <h1 className="Statistic__number">
-          <CountUp end={Lessons.length} duration={7} className="number_coutr" />
+          <CountUp
+            end={Lessons.length - 1}
+            duration={7}
+            className="number_coutr"
+          />
         </h1>
         <div className="Statistic__rightside">
           <h2 className="Statistic__name">Darslar</h2>
@@ -25,7 +29,7 @@ export const Statistic = () => {
       <div className="Statistic">
         <h1 className="Statistic__number">
           <CountUp
-            end={(Lessons.length - 1) * 10}
+            end={(Lessons.length - 1) * 12}
             duration={5}
             className="number_coutr"
           />
