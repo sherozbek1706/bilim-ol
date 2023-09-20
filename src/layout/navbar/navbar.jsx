@@ -83,7 +83,7 @@ export const Navbar = () => {
             className="Navbar__link"
             onClick={handleLogout}
           >
-            {isLoggin ? "O'chirish" : null}
+            {isLoggin ? "Chiqish" : null}
           </Link>
           <img
             className="Navbar__profilephoto"

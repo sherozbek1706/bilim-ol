@@ -2,10 +2,40 @@ import { useRef } from "react";
 import "./login.css";
 import { Link, useNavigate } from "react-router-dom";
 import { Users } from "../../database";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 export const Login = () => {
   const usernameRef = useRef();
   const passwordRef = useRef();
   const navigate = useNavigate();
+
+  const notifyError = (msg) => {
+    toast.warn(msg, {
+      position: "top-center",
+      autoClose: 2000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "dark",
+    });
+  };
+
+  const notifySuccess = (msg) => {
+    toast.success(msg, {
+      position: "top-center",
+      autoClose: 2000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "dark",
+    });
+  };
+
   const handleValidator = (e) => {
     e.preventDefault();
     const username = usernameRef.current.value;
@@ -17,13 +47,15 @@ export const Login = () => {
     });
 
     if (!user) {
-      return alert("Login yoki parol xato!");
+      return notifyError("Login yoki Parol xato!!");
     }
 
     localStorage.setItem("isLoggin", JSON.stringify(user));
 
-    window.location.assign("/");
-    console.log(user);
+    notifySuccess("Login qildingiz!");
+    setTimeout(() => {
+      window.location.assign("/");
+    }, 1400);
   };
   return (
     <div className="container">
@@ -50,6 +82,18 @@ export const Login = () => {
           Bosing
         </Link>
       </div>
+      <ToastContainer
+        position="top-center"
+        autoClose={2000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="dark"
+      />
     </div>
   );
 };
