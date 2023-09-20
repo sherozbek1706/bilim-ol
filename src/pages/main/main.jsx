@@ -2,6 +2,7 @@ import { Button } from "../../components/";
 import { Navbar, Statistic, Students } from "../../layout";
 import "./main.css";
 export const Main = () => {
+  const isLoggin = localStorage.getItem("isLoggin") ? true : false;
   return (
     <>
       <div className="Main">
@@ -15,7 +16,7 @@ export const Main = () => {
           </div>
         </div>
       </div>
-      <Students />
+      {isLoggin ? <Students /> : null}
     </>
   );
 };
