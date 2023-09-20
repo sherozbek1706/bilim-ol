@@ -9,7 +9,7 @@ const data = [
       username: "sherozbek.17",
       password: "12341234",
     },
-    birthday: "200d5-06-17",
+    birthday: "2005-06-17",
   },
   {
     id: 2,
